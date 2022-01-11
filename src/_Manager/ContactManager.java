@@ -101,6 +101,7 @@ public class ContactManager {
             LocalDate dateOfBirth = LocalDate.parse(date, DateTimeFormatter.ofPattern("dd-LL-yyyy"));
             editContact.setDateOfBirth(dateOfBirth);
             editContact.setEmail(enterEmail());
+            contactList.set(index,editContact);
             System.out.println("Sửa " + phoneNumber + " thành công !");
             System.out.println("-----");
         } else {
